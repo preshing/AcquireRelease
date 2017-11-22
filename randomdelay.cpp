@@ -22,7 +22,7 @@ void RandomDelay::doBusyWork()
     do
     {
         i = g_randomValues[m_pos];
-        m_pos += m_wrap;
+        m_pos += m_step;
         if (m_pos >= m_wrap)
             m_pos -= m_wrap;
     }

@@ -35,6 +35,8 @@ void Thread2Func()
 
 int main(int argc, char* argv[])
 {
+    RandomDelay::Initialize();
+    
     printf("is_lock_free: %s\n", flag.is_lock_free() ? "true" : "false");
     
     for (;;) {
